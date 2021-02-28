@@ -8,13 +8,52 @@ body {
     justify-content: center;
     width: 500px;
   }
+  a {
+    font-size: 25px;
+  }
+  #top {
+    width: 40px;
+    height: 40px;
+  }
+  #top > a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 600px) {
   img {
     width: 70vw;
   }
-}
 
+  a {
+    font-size: 3vw;
+  }
+  #top {
+    height: 4vh;
+    width: 4vw;
+  }
+  #top > a {
+    position: absolute;
+    top: 1vh;
+    width: 1vw;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #intro {
+    font-size: 90px;
+    position: relative;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #intro {
+    font-size: 6.5vw;
+    position: relative;
+    text-align: center;
+  }
+}
 #acads {
   position: fixed;
   top: 2vh;
@@ -23,19 +62,17 @@ body {
 
 #intro {
   font-family: "Cinzel", serif;
-  font-size: 6.5vw;
   color: rgb(0, 110, 255);
   text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8);
-  position: absolute;
+  position: relative;
   top: 8vh;
-  left: 35vw;
 }
 
 #home {
   position: fixed;
   top: 2vh;
   font-size: 1vh;
-  left: 70vw;
+  right: 5vw;
 }
 
 a:visited,
@@ -43,8 +80,6 @@ a:link {
   color: rgba(102, 240, 102, 0.4);
   text-decoration: none;
   text-align: center;
-  font-size: 3vw;
-  z-index: 2;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -75,8 +110,6 @@ img {
 
 #top {
   position: fixed;
-  height: 3vw;
-  width: 3vw;
   color: black;
   background: rgba(255, 255, 255, 0.575);
   left: 90vw;
@@ -90,6 +123,7 @@ img {
 }
 
 #top > a {
+  text-decoration: none;
   color: black;
   font-weight: bolder;
 }

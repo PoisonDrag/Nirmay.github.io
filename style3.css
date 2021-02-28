@@ -8,32 +8,50 @@ body {
     justify-content: center;
     width: 500px;
   }
+  a {
+    font-size: 25px;
+  }
+  #top {
+    width: 40px;
+    height: 40px;
+  }
+  #top > a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 600px) {
   img {
     width: 70vw;
   }
-}
-@media only screen and (min-height: 100vh) {
+
+  a {
+    font-size: 3vw;
+  }
   #top {
-    position: fixed;
-    height: 3vw;
-    width: 3vw;
-    color: black;
-    background: rgba(255, 255, 255, 0.575);
-    left: 90vw;
-    text-align: center;
-    border-radius: 25%;
-    top: 90vh;
+    height: 4vh;
+    width: 4vw;
   }
-
-  #top:hover {
-    background: rgb(255, 255, 255);
-  }
-
   #top > a {
-    color: black;
-    font-weight: bolder;
+    position: absolute;
+    top: 1vh;
+    width: 1vw;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #intro {
+    font-size: 90px;
+    position: relative;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #intro {
+    font-size: 6.5vw;
+    position: relative;
+    text-align: center;
   }
 }
 
@@ -45,19 +63,16 @@ body {
 
 #intro {
   font-family: "Cinzel", serif;
-  font-size: 6.5vw;
   color: rgb(0, 110, 255);
   text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8);
-  position: absolute;
   top: 8vh;
-  left: 30vw;
 }
 
 #hobby {
   position: fixed;
   top: 2vh;
   font-size: 1vh;
-  left: 70vw;
+  right: 5vw;
 }
 
 a:visited,
@@ -65,7 +80,6 @@ a:link {
   color: rgba(102, 240, 102, 0.4);
   text-decoration: none;
   text-align: center;
-  font-size: 3vw;
   z-index: 2;
   font-weight: bold;
   text-decoration: underline;
@@ -93,4 +107,23 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+#top {
+  position: fixed;
+  color: black;
+  background: rgba(255, 255, 255, 0.267);
+  right: 2.5vw;
+  border-radius: 25%;
+  top: 90vh;
+}
+
+#top:hover {
+  background: rgb(255, 255, 255);
+}
+
+#top > a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
 }

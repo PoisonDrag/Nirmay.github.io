@@ -8,12 +8,53 @@ body {
     justify-content: center;
     width: 500px;
   }
+  a {
+    font-size: 25px;
+  }
+  #top {
+    width: 40px;
+    height: 40px;
+  }
+  #top > a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 600px) {
   img {
     width: 70vw;
   }
+
+  a {
+    font-size: 3vw;
+  }
+  #top {
+    height: 4vh;
+    width: 4vw;
+  }
+  #top > a {
+    position: absolute;
+    top: 1vh;
+    width: 1vw;
+  }
 }
+@media only screen and (min-width: 1000px) {
+  #intro {
+    font-size: 90px;
+    position: relative;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #intro {
+    font-size: 6.5vw;
+    position: relative;
+    text-align: center;
+  }
+}
+
 #Home {
   color: blue;
   position: fixed;
@@ -23,12 +64,10 @@ body {
 
 #intro {
   font-family: "Cinzel", serif;
-  font-size: 6.5vw;
   color: rgb(0, 110, 255);
   text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8);
-  position: absolute;
+  /* position: absolute; */
   top: 8vh;
-  left: 25vw;
 }
 
 #acad {
@@ -36,7 +75,7 @@ body {
   position: fixed;
   top: 2vh;
   font-size: 1vh;
-  left: 70vw;
+  right: 5vw;
 }
 
 a:visited,
@@ -44,8 +83,6 @@ a:link {
   color: rgba(102, 240, 102, 0.4);
   text-decoration: none;
   text-align: center;
-  font-size: 3vw;
-  z-index: 2;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -63,7 +100,7 @@ a:hover {
   padding: 0;
   margin: 0;
   text-align: center;
-  top: 15vh;
+  top: 25vh;
   z-index: -1;
 }
 
@@ -76,21 +113,21 @@ img {
 
 #top {
   position: fixed;
-  height: 3vw;
-  width: 3vw;
   color: black;
-  background: rgba(255, 255, 255, 0.575);
+  background: rgba(255, 255, 255, 0.274);
   left: 90vw;
-  text-align: center;
   border-radius: 25%;
   top: 90vh;
 }
 
 #top:hover {
   background: rgb(255, 255, 255);
+  font-weight: bolder;
 }
 
 #top > a {
   color: black;
+  text-decoration: none;
   font-weight: bolder;
+  position: absolute;
 }
