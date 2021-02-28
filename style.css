@@ -19,14 +19,13 @@ body {
   }
 }
 #intro {
-  /* font-family: "Cinzel", serif; */
+  font-family: "Cinzel", serif;
   font-size: 6.5vw;
   color: rgb(0, 110, 255);
   text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8);
   position: absolute;
   top: 10vh;
-  left: 30vw;
-  right: 20vw;
+  left: 35vw;
 }
 
 #side {
