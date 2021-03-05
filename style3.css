@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background: url(/img/blacki_thumbnail-1024x538.jpg);
   margin: 0 !important;
   padding: 2vh !important;
   padding-top: 5vh !important;
@@ -135,7 +135,7 @@ body {
 #intro {
   font-family: "Cinzel", serif;
   color: rgb(0, 110, 255);
-  text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8);
+  /* text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8); */
 }
 
 a:visited,
