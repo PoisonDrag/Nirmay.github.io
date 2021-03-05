@@ -1,0 +1,163 @@
+body {
+  background-color: black;
+  margin: 0 !important;
+  padding: 2vh !important;
+  padding-top: 5vh !important;
+  box-sizing: border-box !important;
+}
+@media only screen and (min-width: 725px) {
+  #intro {
+    font-size: 80px;
+  }
+  a:visited,
+  a:link {
+    font-size: 25px;
+  }
+  #con,
+  #dob,
+  #adr,
+  #lang {
+    font-size: 30px;
+    /* display: inline-block; */
+    vertical-align: top;
+    /* width: 50%; */
+    box-sizing: border-box;
+    text-align: center;
+    margin: 5vh 25vw;
+  }
+  #obj {
+    margin-left: 75px !important;
+    font-size: 35px;
+  }
+  #ach {
+    right: 25px;
+  }
+  #home {
+    left: 40px;
+  }
+  #ach,
+  #home {
+    margin-bottom: 100px !important;
+  }
+}
+@media only screen and (max-width: 725px) {
+  #intro {
+    font-size: 7vw;
+  }
+  a:visited,
+  a:link {
+    font-size: 4vw;
+  }
+  #con,
+  #dob,
+  #adr,
+  #lang {
+    font-size: 5vw;
+    /* display: inline-block; */
+    vertical-align: top;
+    /* width: 50%; */
+    margin-top: 10vh;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 7vh 10vw;
+  }
+
+  #obj {
+    font-size: 20px;
+    margin-left: 2vw;
+  }
+  #ach {
+    right: 5vw;
+  }
+  #home {
+    left: 4vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #con,
+  #dob,
+  #adr,
+  #lang {
+    font-size: 35px;
+    vertical-align: top;
+    /* width: 50%; */
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 40px !important;
+  }
+
+  a:link,
+  a:visited {
+    font-size: 30px;
+  }
+  #ach {
+    right: 30px;
+  }
+  #home {
+    left: 40px;
+  }
+  #ach,
+  #home {
+    margin-bottom: 100px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #con,
+  #dob,
+  #adr,
+  #lang {
+    font-size: 35px;
+    margin-left: 2.5vw !important;
+    margin-right: 2.5vw !important;
+    display: inline-block;
+  }
+  #abt {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+#intro {
+  font-family: "Cinzel", serif;
+  top: 10vh;
+  text-align: center;
+  color: rgb(0, 110, 255);
+}
+
+#con,
+#dob,
+#lang,
+#adr {
+  border: 3px solid rgba(255, 255, 255, 0.226);
+  padding: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+
+#obj {
+  color: white;
+  left: 100px;
+}
+
+a:link,
+a:visited {
+  color: darkturquoise;
+  border: 3px solid rgba(41, 236, 203, 0.404);
+  padding: 15px;
+}
+/* 
+a:hover {
+  color: rgb(0, 255, 0);
+  border: 3px solid rgb(0, 255, 21);
+  padding: 15px;
+  margin-left: 0vw;
+} */
+
+#home,
+#ach {
+  position: absolute !important;
+  margin-top: 20px;
+}

@@ -5,43 +5,123 @@ body {
   height: 100vh;
   width: 100vw;
   margin: auto;
-  font-size: 50vw;
+  font-size: 2.5vw;
 }
 
-@media only screen and (min-width: 900px) {
-  #con {
-    font-size: 30px;
+@media only screen and (min-width: 1000px) {
+  #intro {
+    font-size: 70px;
   }
+  #Home {
+    top: 25vh;
+    height: 8vh;
+  }
+  #About {
+    top: 36vh;
+    height: 8vh;
+  }
+  #achieve {
+    top: 47vh;
+    height: 8vh;
+  }
+  #acad {
+    top: 58vh;
+    height: 8vh;
+  }
+  #hobby {
+    top: 69vh;
+    height: 8vh;
+  }
+  a:visited,
+  a:link {
+    height: 8vh;
+  }
+  #quote {
+    font-size: 50px !important;
+    margin-left: 5vw !important;
+    /* margin-right: 15vw !important; */
+  }
+  #line2 {
+    margin-left: 15vw !important;
+    margin-top: -100px;
+  }
+  /*
+  #mark3,
+  #mark4 {
+    /* margin-right: 10vw; 
+    margin-bottom: 40px;
+  }
+  #mark1,
+  #mark2 {
+    margin-bottom: 80px;
+  } */
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   #con {
     font-size: 3vw;
   }
-}
-#intro {
-  font-family: "Cinzel", serif;
-  font-size: 6.5vw;
-  color: rgb(0, 110, 255);
-  text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8);
-  position: absolute;
-  top: 10vh;
-  left: 35vw;
+  #intro {
+    font-size: 6.5vw;
+  }
+  #Home {
+    top: 20vh;
+    height: 6vh;
+  }
+  #About {
+    top: 28vh;
+    height: 6vh;
+  }
+  #achieve {
+    top: 36vh;
+    height: 6vh;
+  }
+  #acad {
+    top: 44vh;
+    height: 6vh;
+  }
+  #hobby {
+    top: 52vh;
+    height: 6vh;
+  }
+  a:visited,
+  a:link {
+    height: 6vh;
+  }
+  #quote {
+    font-size: 2.5vw;
+  }
+  #line2 {
+    margin-left: 15vw !important;
+  }
 }
 
+#intro {
+  font-family: "Cinzel", serif;
+  position: absolute;
+  height: 30vh;
+  width: 80vw;
+  left: 20vw;
+  top: 10vh;
+  text-align: center;
+  color: rgb(0, 110, 255);
+}
 #side {
   background: rgb(43, 42, 42);
   height: 100vh;
   width: 20vw;
-  position: relative;
+  position: absolute;
   top: 0;
 }
 
 #Home {
   background: rgb(29, 97, 223);
   position: absolute;
-  height: 6vh;
   width: 20vw;
-  top: 20vh;
+}
+#About {
+  background: rgb(70, 69, 69);
+  position: absolute;
+  width: 20vw;
 }
 /* #Home > a {
   text-align: center;
@@ -50,34 +130,17 @@ body {
 #achieve {
   background: rgb(70, 69, 69);
   position: absolute;
-  height: 6vh;
   width: 20vw;
-  top: 28vh;
 }
 #acad {
   background: rgb(70, 69, 69);
   position: absolute;
-  height: 6vh;
   width: 20vw;
-  top: 36vh;
 }
 #hobby {
   background: rgb(70, 69, 69);
   position: absolute;
-  height: 6vh;
   width: 20vw;
-  top: 44vh;
-}
-a:visited,
-a:link {
-  color: rgba(255, 255, 255, 0.356);
-  text-decoration: none;
-  width: 20vw;
-  height: 6vh;
-  font-size: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 a:hover {
@@ -87,9 +150,70 @@ a:hover {
   text-align: center;
 }
 
-#con {
-  position: absolute;
-  top: 80vh;
-  right: 5vw;
-  color: rgb(61, 116, 235);
+a:visited,
+a:link {
+  color: rgba(255, 255, 255, 0.356);
+  width: 20vw;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#quote {
+  position: fixed;
+  bottom: 15vh;
+  color: rgb(126, 162, 228);
+  font-size: 5vw;
+  left: 25vw;
+  margin-right: 5px;
+  width: 80vw;
+  margin-left: -5vw;
+}
+
+#mark1 {
+  height: 6vw;
+  width: 2vw;
+  /* position: absolute; */
+  /* bottom: 7vh; */
+  /* left: -2vw; */
+  display: inline-block;
+  background-color: rgba(85, 125, 236, 0.342);
+  transform: skewX(-15deg);
+  margin-right: 0vw;
+  margin-left: 2vw;
+  /* margin-to; */
+}
+#mark2 {
+  height: 6vw;
+  width: 2vw;
+  bottom: 7vh;
+  left: 1vw;
+  display: inline-block;
+  /* position: absolute; */
+  background-color: rgba(85, 125, 236, 0.342);
+  transform: skewX(-15deg);
+  margin-right: -3vw;
+  margin-left: 0vw;
+}
+#mark3 {
+  height: 6vw;
+  width: 2vw;
+  bottom: 2vh;
+  right: 7vw;
+  display: inline-block;
+  /* position: absolute; */
+  background-color: rgba(85, 125, 236, 0.342);
+  transform: skewX(-15deg);
+  margin-left: -3vw;
+}
+#mark4 {
+  height: 6vw;
+  width: 2vw;
+  bottom: 2vh;
+  right: 10vw;
+  display: inline-block;
+  /* position: absolute; */
+  background-color: rgba(85, 125, 236, 0.342);
+  transform: skewX(-15deg);
+  margin-left: 0vw;
 }

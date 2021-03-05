@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achievements</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
@@ -12,28 +14,31 @@
     <div id="intro">
         ACHIEVEMENTS
     </div>
-    <div id="Home">
-        <a href="index.html">HOME</a>
-    </div>
-    
-    <div id="acad">
-        <a href="acad.html">ACADEMICS</a>
-    </div>
     <div id = "ach">
-            <img src="./img/chess.jpg" alt="Chess image" >
-            Participitated in chess tournaments at regional level
-            <br><br>
-            <img src="./img/music.png" alt="Sing image" >
-            Passed Paveshika Poorna exam of Akhil Bhartiya Gandharva Mahavidyalaya Mandal for Hindustani vocal.
-            <br><br>
-            <img src="./img/paint.jpg" alt="Paint image" >
-            Passed elementary exam for drawing<br><br>
-            <img src="./img/convo.jpg" alt="Conversation image">
-            Passed 6 grades of communication skills and 3 grades of spoken english with distinction of examination conducted by trinity college of london.
-            <br>
-            <br>
-            <br>
-        </ul>
+        <div id = "ches">
+            <img src="./img/chess.jpg" alt="Chess image" class ="d-none d-lg-block" >
+            <img src="./img/horse.png" alt="Chess image" class ="d-lg-block d-lg-none">
+            <p id="p1">Participitated in chess tournaments at regional level</p>
+        </div>
+        <div id="musi">
+            <img src="./img/music.png" alt="Sing image" class ="d-none d-lg-block"  id = "i2">
+            <img src="./img/tablas.png" alt="Sing image" class="d-lg-block d-lg-none">
+            <p id = "p2">Passed Praveshika Poorna exam of Akhil Bhartiya Gandharva Mahavidyalaya Mandal for Hindustani vocal</p>
+        </div>    
+        <div id = "pain">
+            <img src="./img/paint.jpg" alt="Paint image" class ="d-none d-lg-block" >
+            <img src="./img/paint-palette.png" alt="Paint image" class="d-lg-block d-lg-none" >
+            <p id="p3">Passed elementary exam for drawing</p>
+        </div>
+        <div id = "conv">
+            <img src="./img/convo.jpg" alt="Conversation image" class ="d-none d-lg-block" id="i4">
+            <img src="./img/conversation.png" alt="Conversation image" class="d-lg-block d-lg-none" >
+            <p id="p4">Passed 6 grades of communication skills and 3 grades of spoken english with distinction of examination conducted by Trinity college of London.</p>
+        </div>
     </div>
+    <span>
+        <span id="abu"><a href="about.html">About</a></span>
+        <span id="aca"><a href="acad.html">Academics</a></span>
+    </span>
 </body>
 </html>

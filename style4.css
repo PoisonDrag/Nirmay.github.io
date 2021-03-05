@@ -1,78 +1,160 @@
 body {
-  background: black;
-  margin: auto;
-  margin-right: 5px;
+  background-color: black;
+  margin: 0 !important;
+  padding: 2vh !important;
+  padding-top: 5vh !important;
+  box-sizing: border-box !important;
+  margin-bottom: 50px !important;
 }
-@media only screen and (min-width: 600px) {
-  img {
-    justify-content: center;
-    width: 500px;
+@media only screen and (min-width: 725px) {
+  #intro {
+    font-size: 80px;
   }
-  a {
+  a:visited,
+  a:link {
     font-size: 25px;
   }
-  #top {
-    width: 40px;
-    height: 40px;
+  #cod,
+  #rdg,
+  #tt,
+  #fb,
+  #sng {
+    font-size: 30px;
+    /* display: inline-block; */
+    vertical-align: top;
+    /* width: 50%; */
+    box-sizing: border-box;
+    text-align: center;
+    margin: 5vh 12.5vw;
   }
-  #top > a {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 25px;
+  img {
+    width: 75px;
+    height: auto;
+  }
+  #ach {
+    right: 175px;
+  }
+  #abu {
+    left: 40px;
+  }
+  #ach,
+  #abu {
+    margin-bottom: 100px !important;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 725px) {
+  #intro {
+    font-size: 7vw;
+  }
+  a:visited,
+  a:link {
+    font-size: 4vw;
+  }
+  #cod,
+  #rdg,
+  #tt,
+  #fb,
+  #sng {
+    font-size: 5vw;
+    /* display: inline-block; */
+    vertical-align: top;
+    /* width: 50%; */
+    margin-top: 10vh;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 7vh 10vw;
+  }
   img {
-    width: 70vw;
+    width: 75px;
+    height: auto;
+  }
+  #ach {
+    right: 25vw;
+  }
+  #abu {
+    left: 4vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* #cod,
+  #rdg,
+  #tt,
+  #fb,
+  #sng {
+    font-size: 35px;
+    vertical-align: top;
+     width: 50%; 
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    margin: 7vh 4vw;
+    padding: 40px !important;
+  } */
+
+  a:link,
+  a:visited {
+    font-size: 40px;
   }
 
-  a {
-    font-size: 3vw;
+  #ach {
+    right: 175px;
   }
-  #top {
-    height: 4vh;
-    width: 4vw;
+  #abu {
+    left: 40px;
   }
-  #top > a {
-    position: absolute;
-    top: 1vh;
-    width: 1vw;
+  #ach,
+  #abu {
+    margin-bottom: 100px !important;
   }
 }
-@media only screen and (min-width: 1000px) {
-  #intro {
-    font-size: 90px;
-    position: relative;
+@media only screen and (min-width: 992px) {
+  img {
+    width: 250px;
+    height: auto;
+  }
+  #p1,
+  #p2,
+  #p3,
+  #p4,
+  #p5 {
+    border: 3px solid rgba(255, 255, 255, 0.226);
+    padding: 25px;
+    box-sizing: border-box;
     text-align: center;
+    color: rgb(255, 255, 255);
+    margin-left: 32vw;
+    margin-top: -170px;
+    font-size: 40px;
   }
-}
-@media only screen and (max-width: 1000px) {
-  #intro {
-    font-size: 6.5vw;
-    position: relative;
-    text-align: center;
+  #p1 {
+    margin-top: -260px;
   }
-}
-#acads {
-  position: fixed;
-  top: 2vh;
-  left: 5vw;
+  #p2 {
+    margin-top: -210px;
+  }
+  #p3 {
+    margin-top: -125px;
+  }
+  #p5 {
+    margin-top: -200px;
+  }
+  #i1 {
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  #i2 {
+    margin-top: 50px;
+  }
+  #i5 {
+    margin-top: 40px;
+  }
 }
 
 #intro {
   font-family: "Cinzel", serif;
   color: rgb(0, 110, 255);
   text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8);
-  position: relative;
-  top: 8vh;
-}
-
-#home {
-  position: fixed;
-  top: 2vh;
-  font-size: 1vh;
-  right: 5vw;
+  text-align: center;
 }
 
 a:visited,
@@ -82,6 +164,11 @@ a:link {
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
+  position: absolute;
+  color: darkturquoise;
+  border: 3px solid rgba(41, 236, 203, 0.404);
+  padding: 15px;
+  margin-bottom: 100px !important;
 }
 
 a:hover {
@@ -90,40 +177,19 @@ a:hover {
   text-align: center;
 }
 
-#hobbs {
-  font-size: 3.5vh;
-  color: rgb(99, 182, 230);
+#cod,
+#rdg,
+#tt,
+#fb,
+#sng {
+  border: 3px solid rgba(255, 255, 255, 0.226);
+  padding: 25px;
+  box-sizing: border-box;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+#ach,
+#abu {
   position: absolute;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  top: 15vh;
-  z-index: -1;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-#top {
-  position: fixed;
-  color: black;
-  background: rgba(255, 255, 255, 0.575);
-  left: 90vw;
-  text-align: center;
-  border-radius: 25%;
-  top: 90vh;
-}
-
-#top:hover {
-  background: rgb(255, 255, 255);
-}
-
-#top > a {
-  text-decoration: none;
-  color: black;
-  font-weight: bolder;
 }
