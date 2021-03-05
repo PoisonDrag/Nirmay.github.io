@@ -1,5 +1,7 @@
 body {
   background: url(/img/blacki_thumbnail-1024x538.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0 !important;
   padding: 2vh !important;
   padding-top: 5vh !important;
