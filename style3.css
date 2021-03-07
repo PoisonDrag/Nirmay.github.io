@@ -36,7 +36,7 @@ body {
   }
 
   #ach {
-    right: 220px;
+    right: 25px;
   }
   #abu {
     left: 25px;
@@ -70,7 +70,7 @@ body {
   }
 
   #ach {
-    right: 25vw;
+    right: 5vw;
   }
   #abu {
     left: 4vw;
@@ -126,11 +126,19 @@ body {
     margin-top: 50px;
   }
 }
+
 @media only screen and (max-width: 992px) {
   #intro {
     font-size: 6.5vw;
     position: relative;
     text-align: center;
+  }
+  .sep {
+    width: 50vw;
+    margin-left: 5vw;
+    margin-right: 45vw;
+    background: rgba(255, 255, 255, 0.527);
+    height: 1px;
   }
 }
 
@@ -140,25 +148,19 @@ body {
   /* text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8); */
 }
 
-a:visited,
-a:link {
-  color: rgba(102, 240, 102, 0.4);
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: underline;
-  position: absolute;
-  color: darkturquoise;
-  border: 3px solid rgba(41, 236, 203, 0.404);
+a:link,
+a:visited {
+  color: rgb(77, 128, 238);
+  border: 3px solid rgba(41, 77, 236, 0.404);
   padding: 15px;
-  margin-bottom: 100px !important;
+  text-decoration: none;
 }
-
+/* 
 a:hover {
   color: rgb(102, 240, 102);
   margin: auto;
   text-align: center;
-}
+} */
 
 #s10,
 #s12,
@@ -170,9 +172,43 @@ a:hover {
   box-sizing: border-box;
   text-align: center;
   color: white;
+  /* transition: 1s; */
 }
 
 #ach,
 #abu {
   position: absolute;
+}
+
+nav {
+  margin-top: -5vh !important;
+  margin-left: -2vh;
+  margin-right: -2vh;
+  background-color: rgb(27, 26, 26) !important;
+}
+
+nav > a {
+  border: none !important;
+}
+
+.nav-link {
+  border: none !important;
+  margin-left: 25px;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+}
+#s10:hover,
+#s12:hover,
+#exm:hover,
+#pro:hover,
+#eng:hover {
+  margin-left: 25px !important;
+  margin-right: 25px !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 75px;
+
+  /* transition-property: padding, margin; */
 }

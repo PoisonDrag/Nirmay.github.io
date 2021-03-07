@@ -205,3 +205,10 @@ a:link {
   transform: skewX(-15deg);
   margin-left: 0vw;
 }
+
+#my {
+  transform: translate(30vw, 40vh);
+  height: 50vh;
+  width: 60vw;
+  text-align: center;
+}

@@ -6,6 +6,7 @@ body {
   padding: 2vh !important;
   padding-top: 5vh !important;
   box-sizing: border-box !important;
+  margin-bottom: 5vh !important;
 }
 @media only screen and (min-width: 725px) {
   #intro {
@@ -25,7 +26,7 @@ body {
     /* width: 50%; */
     box-sizing: border-box;
     text-align: center;
-    margin: 5vh 25vw;
+    margin: 5vh 10vw;
   }
   #obj {
     margin-left: 75px !important;
@@ -40,6 +41,16 @@ body {
   #ach,
   #home {
     margin-bottom: 100px !important;
+  }
+  #con:hover,
+  #dob:hover,
+  #lang:hover,
+  #adr:hover {
+    padding: 50px !important;
+    transform: translateY(-25px);
+    margin-left: 25px;
+    margin-right: 25px;
+    /* transition-property: padding, margin; */
   }
 }
 @media only screen and (max-width: 725px) {
@@ -74,6 +85,16 @@ body {
   #home {
     left: 4vw;
   }
+  #con:hover,
+  #dob:hover,
+  #lang:hover,
+  #adr:hover {
+    padding: 50px !important;
+    transform: translateY(-25px);
+    margin-left: 25px;
+    margin-right: 25px;
+    /* transition-property: padding, margin; */
+  }
 }
 @media only screen and (min-width: 1200px) {
   #con,
@@ -87,7 +108,7 @@ body {
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    padding: 40px !important;
+    padding: 40px;
   }
 
   a:link,
@@ -114,20 +135,43 @@ body {
     margin-left: 2.5vw !important;
     margin-right: 2.5vw !important;
     display: inline-block;
+    padding: 25px !important;
   }
   #abt {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+  #con:hover,
+  #dob:hover,
+  #lang:hover,
+  #adr:hover {
+    padding: 50px 25px !important;
+    transform: translateY(-25px);
+    margin-left: 25px;
+    margin-right: 25px;
+    /* transition-property: padding, margin; */
+  }
 }
 
+@media only screen and (max-width: 992px) {
+  .sep {
+    width: 50vw;
+    margin-left: 5vw;
+    margin-right: 45vw;
+    background: rgba(255, 255, 255, 0.527);
+    height: 1px;
+  }
+}
 #intro {
   font-family: "Cinzel", serif;
-  top: 10vh;
-  text-align: center;
+  display: inline-block;
+  transform: translateX(35vw);
   color: rgb(0, 110, 255);
+  transition: 1s;
 }
-
+#intro:hover {
+  text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.5);
+}
 #con,
 #dob,
 #lang,
@@ -137,18 +181,21 @@ body {
   box-sizing: border-box;
   text-align: center;
   color: white;
+  transition: 1s ease-out;
 }
 
 #obj {
   color: white;
   left: 100px;
+  transition: 1s ease-out;
 }
 
 a:link,
 a:visited {
-  color: darkturquoise;
-  border: 3px solid rgba(41, 236, 203, 0.404);
+  color: rgb(77, 128, 238);
+  border: 3px solid rgba(41, 77, 236, 0.404);
   padding: 15px;
+  text-decoration: none;
 }
 /* 
 a:hover {
@@ -162,4 +209,33 @@ a:hover {
 #ach {
   position: absolute !important;
   margin-top: 20px;
+  transition: 1s;
+}
+
+nav {
+  margin-top: -5vh !important;
+  margin-left: -2vh;
+  margin-right: -2vh;
+  background-color: rgb(27, 26, 26) !important;
+  transition: 3s !important;
+}
+
+nav > a {
+  border: none !important;
+}
+
+.nav-link {
+  border: none !important;
+  margin-left: 25px;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+}
+
+#home:hover {
+  transform: translateX(-10px);
+}
+#ach:hover {
+  transform: translateX(10px);
 }
