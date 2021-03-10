@@ -22,12 +22,10 @@ body {
   #fb,
   #sng {
     font-size: 30px;
-    /* display: inline-block; */
     vertical-align: top;
-    /* width: 50%; */
     box-sizing: border-box;
     text-align: center;
-    margin: 5vh 12.5vw;
+    margin: 5vh 50px;
   }
   img {
     width: 75px;
@@ -58,13 +56,11 @@ body {
   #fb,
   #sng {
     font-size: 5vw;
-    /* display: inline-block; */
     vertical-align: top;
-    /* width: 50%; */
     margin-top: 10vh;
     box-sizing: border-box;
     text-align: center;
-    margin: 7vh 10vw;
+    margin: 7vh 50px;
   }
   img {
     width: 75px;
@@ -78,21 +74,6 @@ body {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* #cod,
-  #rdg,
-  #tt,
-  #fb,
-  #sng {
-    font-size: 35px;
-    vertical-align: top;
-     width: 50%; 
-    box-sizing: border-box;
-    text-align: center;
-    display: inline-block;
-    margin: 7vh 4vw;
-    padding: 40px !important;
-  } */
-
   a:link,
   a:visited {
     font-size: 40px;
@@ -117,11 +98,21 @@ body {
     background: rgba(255, 255, 255, 0.527);
     height: 1px;
   }
+  #cod:hover,
+  #rdg:hover,
+  #tt:hover,
+  #fb:hover,
+  #sng:hover {
+    padding: 50px !important;
+    transform: translateY(-25px);
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 @media only screen and (min-width: 992px) {
   img {
-    width: 250px;
-    height: auto;
+    height: 200px;
+    width: auto;
   }
   #p1,
   #p2,
@@ -138,36 +129,73 @@ body {
     font-size: 40px;
   }
   #p1 {
-    margin-top: -260px;
+    margin-top: -200px;
   }
   #p2 {
     margin-top: -210px;
   }
   #p3 {
     margin-top: -125px;
+    transform: translateY(-50px);
   }
   #p5 {
     margin-top: -200px;
   }
   #i1 {
-    margin-left: 25px;
-    margin-top: 30px;
+    padding: 20px;
   }
+  #i3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transform: translateY(20px);
+    /* 
+    margin-top: -80px;
+    margin-bottom: 0px;
+    transform: translateY(50%); */
+  }
+  #i4 {
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+  #i5,
   #i2 {
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  #i5 {
-    margin-top: 40px;
+  #cod:hover,
+  #rdg:hover,
+  #tt:hover,
+  #fb:hover,
+  #sng:hover {
+    padding: 50px !important;
+    transform: translateY(-25px);
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #cod,
+  #rdg,
+  #tt,
+  #fb,
+  #sng {
+    /* height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center; */
   }
 }
 
 #intro {
   font-family: "Cinzel", serif;
   color: rgb(0, 110, 255);
-  /* text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.8); */
   text-align: center;
+  transition: 1s;
 }
-
+#intro:hover {
+  text-shadow: 1.4vw 1.4vw 1.4vw rgba(12, 141, 228, 0.4);
+}
 a:link,
 a:visited {
   color: rgb(77, 128, 238);
@@ -175,12 +203,6 @@ a:visited {
   padding: 15px;
   text-decoration: none;
 }
-
-/* a:hover {
-  color: rgb(102, 240, 102);
-  margin: auto;
-  text-align: center;
-}*/
 
 #cod,
 #rdg,
@@ -192,12 +214,13 @@ a:visited {
   box-sizing: border-box;
   text-align: center;
   color: rgb(255, 255, 255);
-  /* transition: 1s; */
+  transition: 1s;
 }
 
 #ach,
 #abu {
   position: absolute;
+  transition: 1s;
 }
 
 nav {
@@ -220,16 +243,9 @@ nav > a {
   margin-right: 20px;
 }
 
-#cod:hover,
-#rdg:hover,
-#tt:hover,
-#fb:hover,
-#sng:hover {
-  margin-left: 25px !important;
-  margin-right: 25px !important;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 75px;
-
-  /* transition-property: padding, margin; */
+#abu:hover {
+  transform: translateX(-10px);
+}
+#ach:hover {
+  transform: translateX(10px);
 }
