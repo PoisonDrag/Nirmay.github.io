@@ -159,9 +159,11 @@ body {
 
   #i2 {
     margin-top: 50px !important;
+    transform: translateY(-25px);
   }
   #i4 {
     margin-top: 75px !important;
+    transform: translateY(-25px);
   }
 
   nav {
