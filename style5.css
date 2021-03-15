@@ -21,9 +21,7 @@ body {
   #adr,
   #lang {
     font-size: 30px;
-    /* display: inline-block; */
     vertical-align: top;
-    /* width: 50%; */
     box-sizing: border-box;
     text-align: center;
     margin: 5vh 10vw;
@@ -50,7 +48,6 @@ body {
     transform: translateY(-25px);
     margin-left: 25px;
     margin-right: 25px;
-    /* transition-property: padding, margin; */
   }
 }
 @media only screen and (max-width: 725px) {
@@ -66,9 +63,7 @@ body {
   #adr,
   #lang {
     font-size: 5vw;
-    /* display: inline-block; */
     vertical-align: top;
-    /* width: 50%; */
     margin-top: 10vh;
     box-sizing: border-box;
     text-align: center;
@@ -93,7 +88,6 @@ body {
     transform: translateY(-25px);
     margin-left: 25px;
     margin-right: 25px;
-    /* transition-property: padding, margin; */
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -103,7 +97,6 @@ body {
   #lang {
     font-size: 35px;
     vertical-align: top;
-    /* width: 50%; */
     box-sizing: border-box;
     text-align: center;
     margin-left: 50px;
@@ -127,6 +120,10 @@ body {
   }
 }
 @media only screen and (min-width: 992px) {
+  #intro{   
+    transform: translateX(40vw) !important;
+  }
+  
   #con,
   #dob,
   #adr,
@@ -136,6 +133,7 @@ body {
     margin-right: 2.5vw !important;
     display: inline-block;
     padding: 25px !important;
+    transform: translateX(2.5vw);
   }
   #abt {
     margin-left: 0 !important;
@@ -149,7 +147,7 @@ body {
     transform: translateY(-25px);
     margin-left: 25px;
     margin-right: 25px;
-    /* transition-property: padding, margin; */
+    transform: translateX(2.5vw);
   }
 }
 
@@ -197,14 +195,6 @@ a:visited {
   padding: 15px;
   text-decoration: none;
 }
-/* 
-a:hover {
-  color: rgb(0, 255, 0);
-  border: 3px solid rgb(0, 255, 21);
-  padding: 15px;
-  margin-left: 0vw;
-} */
-
 #home,
 #ach {
   position: absolute !important;

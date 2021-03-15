@@ -1,11 +1,6 @@
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/black_blue_abstract_stripes_513_1920x1080.jpg) center/cover fixed
-      no-repeat;
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-  /* background-position-y:  */
+    url("./img/black_blue_abstract_stripes_513_1920x1080.jpg") center/cover fixed no-repeat;
   height: 100vh;
   width: 100vw;
   margin: auto;
@@ -43,7 +38,6 @@ body {
   #quote {
     font-size: 50px !important;
     margin-left: 5vw !important;
-    /* margin-right: 15vw !important; */
   }
   #line2 {
     margin-left: 15vw !important;
@@ -97,7 +91,7 @@ body {
   left: 20vw;
   top: 10vh;
   text-align: center;
-  color: rgb(0, 110, 255);
+  color: rgb(0, 140, 255);
 }
 #side {
   background: rgb(43, 42, 42);
@@ -105,6 +99,7 @@ body {
   width: 20vw;
   position: absolute;
   top: 0;
+  z-index: -2;
 }
 
 #Home {
@@ -117,10 +112,6 @@ body {
   position: absolute;
   width: 20vw;
 }
-/* #Home > a {
-  text-align: center;
-  margin-left: 0;
-} */
 #achieve {
   background: rgb(70, 69, 69);
   position: absolute;
@@ -162,53 +153,6 @@ a:link {
   margin-right: 5px;
   width: 80vw;
   margin-left: -5vw;
-}
-
-#mark1 {
-  height: 6vw;
-  width: 2vw;
-  /* position: absolute; */
-  /* bottom: 7vh; */
-  /* left: -2vw; */
-  display: inline-block;
-  background-color: rgba(85, 125, 236, 0.342);
-  transform: skewX(-15deg);
-  margin-right: 0vw;
-  margin-left: 2vw;
-}
-#mark2 {
-  height: 6vw;
-  width: 2vw;
-  bottom: 7vh;
-  left: 1vw;
-  display: inline-block;
-  /* position: absolute; */
-  background-color: rgba(85, 125, 236, 0.342);
-  transform: skewX(-15deg);
-  margin-right: -3vw;
-  margin-left: 0vw;
-}
-#mark3 {
-  height: 6vw;
-  width: 2vw;
-  bottom: 2vh;
-  right: 7vw;
-  display: inline-block;
-  /* position: absolute; */
-  background-color: rgba(85, 125, 236, 0.342);
-  transform: skewX(-15deg);
-  margin-left: -3vw;
-}
-#mark4 {
-  height: 6vw;
-  width: 2vw;
-  bottom: 2vh;
-  right: 10vw;
-  display: inline-block;
-  /* position: absolute; */
-  background-color: rgba(85, 125, 236, 0.342);
-  transform: skewX(-15deg);
-  margin-left: 0vw;
 }
 
 #my {

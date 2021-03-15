@@ -148,10 +148,6 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     transform: translateY(20px);
-    /* 
-    margin-top: -80px;
-    margin-bottom: 0px;
-    transform: translateY(50%); */
   }
   #i4 {
     margin-top: 0px;
@@ -171,19 +167,6 @@ body {
     transform: translateY(-25px);
     margin-left: 25px;
     margin-right: 25px;
-  }
-  #cod,
-  #rdg,
-  #tt,
-  #fb,
-  #sng {
-    /* height: 100%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center; */
   }
 }
 

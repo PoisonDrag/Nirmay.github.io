@@ -22,9 +22,7 @@ body {
   #pro,
   #eng {
     font-size: 30px;
-    /* display: inline-block; */
     vertical-align: top;
-    /* width: 50%; */
     box-sizing: border-box;
     text-align: center;
     margin: 5vh 35px;
@@ -57,9 +55,7 @@ body {
   #pro,
   #eng {
     font-size: 5vw;
-    /* display: inline-block; */
     vertical-align: top;
-    /* width: 50%; */
     box-sizing: border-box;
     text-align: center;
     margin: 7vh 10vw;
@@ -84,12 +80,9 @@ body {
   #eng {
     font-size: 35px;
     vertical-align: top;
-    /* width: 50%; */
     box-sizing: border-box;
     text-align: center;
     display: inline-block;
-    /* margin-left: 50px;
-    margin-right: 50px; */
     padding: 40px !important;
     margin-top: 50px;
   }
@@ -108,10 +101,6 @@ body {
     font-size: 90px;
     position: relative;
     text-align: center;
-  }
-  body {
-    /* padding-right: -20px !important; */
-    /* margin-right: -20px !important; */
   }
   #s10,
   #s12,
@@ -137,7 +126,6 @@ body {
     transform: translateY(-25px);
     margin-left: 35px !important;
     margin-right: 35px;
-    /* transition-property: padding, margin; */
   }
 }
 
@@ -160,10 +148,8 @@ body {
   #pro:hover,
   #eng:hover {
     padding: 50px !important;
-    /* transform: translateY(-25px); */
     margin-left: 25px;
     margin-right: 25px;
-    /* transition-property: padding, margin; */
   }
 }
 
